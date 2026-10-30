@@ -1,0 +1,7 @@
+# muse_galaxy -- DSH 采集器插件（muse_vtuber 的输入侧）bundle patch
+#
+# 条目 id/name 必须与包名一致。默认配置即可用：它把本地文件/网络资源/直播流解码成
+# JPEG 帧 + 16k PCM 推给 muse_vtuber 的采集口（见 README「配置」）。
+- insert:
+    - id: muse_galaxy
+      name: muse_galaxy

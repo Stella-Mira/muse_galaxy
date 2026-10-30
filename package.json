@@ -1,0 +1,34 @@
+{
+  "name": "muse_galaxy",
+  "version": "2.0.0",
+  "description": "DSH 插件：muse_vtuber 的采集器——把本地视频/音频文件、网络资源与直播流解码成 JPEG 帧 + 16k PCM，推给 muse_vtuber 的采集口（取帧策略/断句/识别都在 vtuber）。暴露 galaxy_path / galaxy_rtsp / galaxy_path_bilibili / galaxy_rtsp_bilibili / galaxy_status / galaxy_stop",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "galaxy",
+    "capture",
+    "vtuber",
+    "ffmpeg",
+    "yt-dlp"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stella-Mira/muse_galaxy.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
